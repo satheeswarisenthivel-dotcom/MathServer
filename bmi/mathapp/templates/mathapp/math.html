@@ -1,0 +1,55 @@
+
+<html> 
+<head> 
+<title>bmi calculator</title> 
+<style>
+h1 {
+    border: 2px solid;
+    padding: 15px;
+    margin: 40px;
+    border-radius: 10px;
+    position: center;
+    top: 200px;
+    right: 1100px;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+form {
+    border: 5px solid rgb(13, 13, 13);
+    background-color: rgb(169, 32, 54);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 425px;
+    position: center;
+    top: 300px;
+    left: 527px;
+}
+</style>
+</head> 
+<body>
+<div class="edge"> 
+<div class="box"> 
+<h1>bmi calculator ---S.SATHEESWARI(25017493)</h1> 
+<form method="POST">
+{%csrf_token %}
+<div class="formelt"> 
+height:<input type="text" name="height" value="{{h}}"></input>(in cm)<br/> 
+</div> 
+<div class="formelt"> 
+weight:<input type="text" name="weight" value="{{w}}"></input>(in kg)<br/> 
+</div> 
+<div class="formelt"> 
+<input type="submit" value="Calculate"></input><br/> 
+</div> 
+<div class="formelt"> 
+bmi:<input type="text" name="bmi" value="{{bmi}}">
+</div>
+</form>
+</div>
+</div> 
+</body>
+
+
